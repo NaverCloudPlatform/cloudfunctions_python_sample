@@ -1,4 +1,4 @@
-import Calc
+import calc
 
 
 def main(args):
@@ -6,7 +6,7 @@ def main(args):
     num1 = args.get("num1", 1)
     num2 = args.get("num2", 2)
 
-    result = Calc.Calc.sum(num1, num2)
+    result = calc.Calc.sum(num1, num2)
 
     print("## num1 : " + str(num1))
     print("## num2 : " + str(num2))
