@@ -3,17 +3,16 @@ import urllib.request
 import ssl
 import json
 
+# REST End-point
 API_HOST = 'https://api-sens.ncloud.com'
-
-
 # NCP Access Key ID
 AUTH_KEY = 'qEvQEqjALeNxsOXqAa0F'
-# SENS project secret key
-SERVICE_SECRET = '3d1fff9635ce4faa8f3912168c7ab0c1'
 # SENS project name
 PROJECT_NAME = 'first_project'
 # SENS service id
-SERVICE_ID = 'ncp:sms:kr:253463621387:first_project'
+SERVICE_ID = 'ncp:sms:kr:253463679625:first_project'
+# SENS project secret key
+SERVICE_SECRET = '62f008b56cde420a9408ba38a9f7350b'
 # Request URL
 FULL_PATH = API_HOST + '/v1/sms/services/' + SERVICE_ID + '/messages'
 # Request Body
@@ -21,9 +20,9 @@ data = {
   "type": "sms",
   "contentType": "comm",
   "countryCode": "82",
-  "from": "01071097007",
+  "from": "0100000000",
   "to": [
-    "01071097007"
+    "0100000000"
   ],
   "content": "hello world"
 }
@@ -37,8 +36,8 @@ class SmsSender:
 
         req = urllib.request.Request(FULL_PATH)
 
-        req.add_header('X-NCP-auth-key', 'qEvQEqjALeNxsOXqAa0F')
-        req.add_header('X-NCP-service-secret', '3d1fff9635ce4faa8f3912168c7ab0c1')
+        req.add_header('X-NCP-auth-key', AUTH_KEY)
+        req.add_header('X-NCP-service-secret', SERVICE_SECRET)
         req.add_header('Content-Type', 'application/json')
 
         json_data = json.dumps(data)
