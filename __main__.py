@@ -7,9 +7,9 @@ from datetime import datetime
 
 def main(args):
 
-    process_calc({"num1": 2, "num2": 3})
+    #process_calc({"num1": 2, "num2": 3})
     #process_sens()
-    #process_mail()
+    process_mail()
 
 
 # cloud functions : calculator
@@ -34,9 +34,9 @@ def process_sens():
         "type": "sms",
         "contentType": "comm",
         "countryCode": "82",
-        "from": "01071097007",
+        "from": "01000000000",
         "to": [
-            "01071097007"
+            "01000000000"
         ],
         "content": "hello world"
     }
