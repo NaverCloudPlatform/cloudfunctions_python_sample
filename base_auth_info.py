@@ -11,8 +11,8 @@ class BaseAuthInfo:
 
     # SENS #
 
-    # SENS REST End-point
-    sens_ep_path = 'https://api-sens.ncloud.com'
+    # SENS REST End-Point
+    sens_ep_path = 'https://api-sens.ncloud.com/v1/sms/services/'
     # SENS project name
     sens_project_name = ''
     # SENS service id
@@ -22,7 +22,7 @@ class BaseAuthInfo:
 
     # Cloud OutBound Mailer #
 
-    # Outbound Mailer REST End-point
+    # Outbound Mailer REST End-Point
     mail_ep_path = 'https://mail.apigw.ntruss.com/api/v1/mails'
 
     def get_api_key(self):
@@ -47,7 +47,4 @@ class BaseAuthInfo:
         return self.mail_ep_path
 
     def get_sens_ep_path(self):
-
-        ep_full_path = self.sens_ep_path + '/v1/sms/services/' + self.sens_service_id + '/messages'
-
-        return ep_full_path
+        return self.sens_ep_path + self.sens_service_id + '/messages'
