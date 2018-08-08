@@ -7,9 +7,9 @@ from datetime import datetime
 
 def main(args):
 
-    #process_calc({"num1": 2, "num2": 3})
+    process_calc({"num1": 2, "num2": 3})
     #process_sens()
-    process_mail()
+    #process_mail()
 
 
 # cloud functions : calculator
@@ -22,7 +22,7 @@ def process_calc(args):
 
     print("## num1 : " + str(num1))
     print("## num2 : " + str(num2))
-    print("## result : "+str(result))
+    print("## result : " + str(result))
 
     return {"payload": result}
 
@@ -62,8 +62,8 @@ def process_mail():
         "body": mail_contents,
         "recipients": [
             {
-                "address": "changhyeon.heo@navercorp.com",
-                "name": "허창현",
+                "address": "receiver@company.com",
+                "name": "홍길동",
                 "type": "R",
                 "parameters": {
                     "current_date": current_date
