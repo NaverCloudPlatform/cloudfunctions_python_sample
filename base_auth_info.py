@@ -3,22 +3,22 @@ class BaseAuthInfo:
     # Base Auth Info #
 
     # API Gateway api key
-    api_key = "5wbYKROLFv38n73HWFte9xGW7zPXwah2qKuFEPgA"
+    api_key = ""
     # NCP Access key
-    access_key = 'qEvQEqjALeNxsOXqAa0F'
+    access_key = ''
     # NCP Access secrete
-    access_secrete = 'sU9ZMODPKawiR9lA2cKoKfjs9pv71pfy0eo2hkXQ'
+    access_secrete = ''
 
     # SENS #
 
     # SENS REST End-point
     sens_ep_path = 'https://api-sens.ncloud.com'
     # SENS project name
-    sens_project_name = 'first_project_2'
+    sens_project_name = ''
     # SENS service id
-    sens_service_id = 'ncp:sms:kr:253463657945:test_project'
+    sens_service_id = ''
     # SENS project secret key
-    sens_service_secrete = '536211945e224e048afb7437b7483a3b'
+    sens_service_secrete = ''
 
     # Cloud OutBound Mailer #
 
