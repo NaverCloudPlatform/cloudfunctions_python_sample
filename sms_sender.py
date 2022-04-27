@@ -36,9 +36,9 @@ if __name__ == '__main__':
         "type": "sms",
         "contentType": "comm",
         "countryCode": "82",
-        "from": "01071097007",
+        "from": "",
         "to": [
-            "01071097007"
+            "0101097007"
         ],
         "content": "hello world"
     }
