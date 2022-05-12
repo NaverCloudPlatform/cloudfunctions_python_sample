@@ -65,7 +65,7 @@ if __name__ == '__main__':
         "body": "귀하의 등급이 ${BEFORE_GRADE}에서 ${AFTER_GRADE}로 변경되었습니다.",
         "recipients": [
             {
-                "address": "changhyeon.heo@navercorp.com",
+                "address": "",
                 "name": "홍길동",
                 "type": "R",
                 "parameters": {
